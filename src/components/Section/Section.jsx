@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 export function Section({title, children}) {
     return (
@@ -7,4 +7,9 @@ export function Section({title, children}) {
             {children}
       </div>
   )
+}
+
+
+Section.propTypes = {
+    title: PropTypes.string,
 }
